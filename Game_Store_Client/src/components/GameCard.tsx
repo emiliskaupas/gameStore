@@ -19,7 +19,7 @@ const GameCard = ({ game }: GameCardProps) => {
       ? `$${parseFloat(game.price).toFixed(2)}`
       : 'N/A';
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const getImageUrl = (url: string) =>
     url.startsWith('http') ? url : `${API_BASE_URL}${url}`;
 
