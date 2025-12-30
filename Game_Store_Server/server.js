@@ -17,6 +17,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 const allowedOrigins = [
   'https://game-store-drab-delta.vercel.app',
   'http://localhost:3000',
+  'http://localhost:5173',
 ];
 app.use(cors({
   origin: function (origin, callback) {
