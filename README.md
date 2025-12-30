@@ -1,5 +1,18 @@
 # Game Store App
 
+## Technologies Used
+
+- **Backend:** Node.js (Express)
+- **Frontend:** React (Vite)
+- **Database:** PostgreSQL
+
+## Deployment
+
+- **Backend & Database Hosting:** [Render](https://render.com/) (free tier)
+- **Frontend Hosting:** [Vercel](https://vercel.com/) (free tier)
+
+All deployments use free service tiers.
+
 A full-stack game store application with a Node.js/Express backend and a React (Vite) frontend.
 
 ---
