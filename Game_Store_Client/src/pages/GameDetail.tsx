@@ -111,12 +111,10 @@ const GameDetail = () => {
               fontWeight: 800,
               color: '#fff',
               margin: '0 0 8px 0',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap',
               letterSpacing: 1,
+              wordBreak: 'break-word',
+              whiteSpace: 'normal',
             }}
-            noWrap
           >
             {game.title}
           </Typography>
@@ -189,14 +187,16 @@ const GameDetail = () => {
               <Typography variant="h6" gutterBottom sx={{ color: '#fff', fontWeight: 700 }}>
                 About
               </Typography>
-              <Typography variant="body1" sx={{ color: '#b9bbbe' }}>
+              <Typography variant="body1" sx={{ color: '#b9bbbe', whiteSpace: 'pre-line', wordBreak: 'break-word' }}>
                 {game.description}
               </Typography>
             </Box>
           )}
-          <Button variant="contained" color="primary" sx={{ mt: 4, fontWeight: 700, fontSize: 18, borderRadius: 2 }}>
-            Add to Cart
-          </Button>
+          <Box sx={{ mt: 4 }}>
+            <Button variant="contained" color="primary" sx={{ fontWeight: 700, fontSize: 18, borderRadius: 2, width: '100%' }}>
+              Add to Cart
+            </Button>
+          </Box>
         </CardContent>
       </Card>
     </Container>
