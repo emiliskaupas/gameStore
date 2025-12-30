@@ -43,10 +43,10 @@ const GameList = () => {
 
   return (
     <Container maxWidth={false} sx={{
-      px: { xs: 1, sm: 2, md: 4, lg: 8 },
-      py: 4,
+      px: { xs: 0.5, sm: 1, md: 2, lg: 4 },
+      py: 2,
       width: '100%',
-      maxWidth: '1800px',
+      maxWidth: '1400px',
       margin: '0 auto',
       minHeight: '100vh',
       display: 'flex',
@@ -63,8 +63,8 @@ const GameList = () => {
           background: 'linear-gradient(135deg, #fff 40%, #00e1ff 80%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
-          letterSpacing: 2,
-          fontSize: { xs: 32, sm: 40, md: 48 },
+          letterSpacing: 1,
+          fontSize: { xs: 20, sm: 26, md: 32 },
           textTransform: 'uppercase',
         }}
       >
@@ -111,12 +111,12 @@ const GameList = () => {
                 md: 'repeat(3, 1fr)',
                 lg: 'repeat(4, 1fr)',
               },
-              gap: { xs: 3, sm: 4 },
+              gap: { xs: 2, sm: 3 },
               justifyContent: 'center',
               alignItems: 'start',
               pb: 4,
               width: '100%',
-              maxWidth: 1400,
+              maxWidth: 1000,
               borderRadius: 6,
               boxShadow: '0 0 0 0',
             }}
