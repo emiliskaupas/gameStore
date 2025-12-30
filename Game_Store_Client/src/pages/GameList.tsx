@@ -102,43 +102,29 @@ const GameList = () => {
           <Typography align="center" sx={{ mb: 2, fontSize: 20, color: '#fff', fontWeight: 600, letterSpacing: 1 }}>
             {searchQuery ? `Found ${games.length} game(s) for "${searchQuery}"` : `Showing all ${games.length} game(s)`}
           </Typography>
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: {
-            xs: 'repeat(1, 1fr)',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(3, 1fr)',
-            lg: 'repeat(4, 1fr)',
-          },
-          gap: { xs: 3, sm: 4, md: 5, lg: 5 }, // Increased gap
-          justifyContent: 'center',
-          alignItems: 'start',
-          pb: 4,
-          width: '100%',
-          maxWidth: 1000,
-          borderRadius: 6,
-          boxShadow: '0 0 0 0',
-          mt: 2, // Add top margin to prevent overlap
-        }}
-      >
-        {games.map((game) => (
           <Box
-            key={game.id}
             sx={{
-              width: { xs: 160, sm: 180, md: 190, lg: 200 },
-              height: { xs: 200, sm: 210, md: 220, lg: 230 }, // Shorter height
-              mx: 'auto',
-              mb: { xs: 2, sm: 2.5, md: 3, lg: 3 }, // Space between cards
-              display: 'flex',
-              alignItems: 'center',
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: 'repeat(1, 1fr)',
+                sm: 'repeat(2, 1fr)',
+                md: 'repeat(3, 1fr)',
+                lg: 'repeat(4, 1fr)',
+              },
+              gap: { xs: 2, sm: 3 },
               justifyContent: 'center',
+              alignItems: 'start',
+              pb: 4,
+              width: '100%',
+              maxWidth: 1000,
+              borderRadius: 6,
+              boxShadow: '0 0 0 0',
             }}
           >
-            <GameCard game={game} />
+            {games.map((game) => (
+              <GameCard key={game.id} game={game} />
+            ))}
           </Box>
-        ))}
-      </Box>
         </>
       )}
     </Container>
