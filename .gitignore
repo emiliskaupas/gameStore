@@ -1,0 +1,63 @@
+# Node.js
+node_modules/
+.env
+.env.*
+dist/
+build/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Database
+*.sqlite
+*.db
+
+# Misc
+*.log
+*.tgz
+
+# Production
+Game.Store.Client/.next/
+Game.Store.Client/.vercel/
+Game.Store.Client/.netlify/
+Game.Store.Client/.cache/
+Game.Store.Client/.turbo/
+
+# Server
+Game.Store.Server/.env
+Game.Store.Server/node_modules/
+Game.Store.Server/coverage/
+Game.Store.Server/.cache/
+
+# Client
+Game.Store.Client/node_modules/
+Game.Store.Client/coverage/
+Game.Store.Client/.cache/
+
+# Windows
+*.exe
+*.dll
+*.bat
+*.cmd
+
+# Mac
+*.DS_Store
+
+# Linux
+*~

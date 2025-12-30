@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-color: #7c3aed;
+  --secondary-color: #00e1ff;
+  --background: #2d0b4e;
+  --surface: #1a0033;
+  --surface-hover: #3a0e6e;
+  --text-primary: #fff;
+  --text-secondary: #b9bbbe;
+  --border-color: #3a0e6e;
+  --success: #00e1ff;
+  --error: #ff2e9a;
+}
+
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #2d0b4e 0%, #7c3aed 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+
+.app {
+  min-height: 100vh;
+  padding: 32px 0 0 0;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.loading,
+.error,
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+}
+
+.loading {
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--error);
+}
+
+.no-results {
+  color: var(--text-secondary);
+}
+
+.error-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.back-button {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: var(--surface-hover);
+  transform: translateY(-2px);
+}
