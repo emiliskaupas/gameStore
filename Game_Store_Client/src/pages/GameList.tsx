@@ -122,7 +122,16 @@ const GameList = () => {
             }}
           >
             {games.map((game) => (
-              <GameCard key={game.id} game={game} />
+              <Box key={game.id} sx={{
+                width: { xs: 180, sm: 200, md: 210, lg: 220 },
+                height: { xs: 270, sm: 290, md: 310, lg: 320 },
+                mx: 'auto',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <GameCard game={game} />
+              </Box>
             ))}
           </Box>
         </>
