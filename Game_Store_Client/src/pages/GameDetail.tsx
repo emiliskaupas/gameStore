@@ -78,7 +78,9 @@ const GameDetail = () => {
       >
         <CardMedia
           component="img"
-          image={game.image_url.startsWith('http') ? game.image_url : `http://localhost:5000${game.image_url}`}
+          image={game.image_url.startsWith('http')
+            ? game.image_url
+            : `${import.meta.env.VITE_API_BASE_URL}${game.image_url}`}
           alt={game.title}
           sx={{
             width: { xs: '100%', md: 400 },
